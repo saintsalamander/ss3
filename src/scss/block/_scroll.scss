@@ -1,0 +1,50 @@
+#scroll {
+    position: relative;
+    height: 100vh;
+    // &:hover > #back--far {
+    //     animation: autoScroll__back--far 300s 1 linear normal none;
+    // }
+    // &:hover > #back--near {
+    //     animation: autoScroll__back--near 300s 1 linear normal none;
+    // }
+    // &:hover > #front {
+    //     animation: autoScroll__front 300s 1 linear normal none;
+    // }
+}
+@keyframes autoScroll__back--near {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes autoScroll__front {
+    0% {
+        transform: translateX(0);
+    }
+    // for 35% = 105s = intro〜間奏1
+    35% {
+        transform: translateX(-35%);
+    }
+    // for 11% = 33s = べに
+    46% {
+        transform: translateX(-35%);
+    }
+    // for 9% = 27s = B2〜間奏2
+    55% {
+        transform: translateX(-44%);
+    }
+    // for 24% = 72s = 魔王〜天使
+    79% {
+        transform: translateX(-44%);
+    }
+    // for 17% = 51s = ラスト
+    96% {
+        transform: translateX(-61%);
+    }
+    // for 4% = 12s = 終幕
+    100% {
+        transform: translateX(-61%);
+    }
+}

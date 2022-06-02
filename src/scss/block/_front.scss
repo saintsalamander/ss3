@@ -1,0 +1,49 @@
+#front {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    overflow-y: hidden;
+}
+.front {
+    &__object {
+        position: relative;
+        width: auto;
+        height: 64px;
+    }
+    &__base {
+        &--above {
+            position: relative;
+            width: auto;
+            height: 64px;
+        }
+        &--below {
+            position: relative;
+            width: 32000px;
+            height: 64px;
+            background: url(../../../assets/images/grass.png);
+        }
+    }
+}
+.catsle {
+    position: absolute;
+    left: -200px;
+    width: auto;
+    height: 512px;
+    overflow-y: hidden;
+}
+.house_wooden {
+    position: absolute;
+    left: 1300px;
+    bottom: 64px;
+    width: 256px;
+    height: auto;
+}
+.tree {
+    position: absolute;
+    left: 500px;
+    bottom: 48px;
+    width: 320px;
+    height: 344px;
+    background: url(../../../assets/images/tree-dot.png) repeat-x;
+}

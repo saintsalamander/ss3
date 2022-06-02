@@ -1,0 +1,18 @@
+.button {
+    display: block;
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    padding: 10px 20px;
+    width: auto;
+    height: auto;
+    background: #fff;
+    cursor: pointer;
+    font-family: "misaki_gothic_2nd";
+}
+.button:hover{
+    font-size: 14px;
+}
+.button:active {
+    padding: 11px 19px 9px 21px;
+}
