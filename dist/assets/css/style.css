@@ -454,15 +454,15 @@ html, body {
   border: double 10px #fff;
   background: #000;
 }
-.dialog__text {
+.dialog__inner {
   position: relative;
 }
-.dialog__text__name {
+.dialog__inner .name {
   position: relative;
   margin-bottom: 20px;
   color: #fff;
 }
-.dialog__text--first {
+.dialog__inner .text--first {
   display: none;
   position: relative;
   width: auto;
@@ -470,7 +470,7 @@ html, body {
   color: #fff;
   overflow: hidden;
 }
-.dialog__text--second {
+.dialog__inner .text--second {
   display: none;
   position: relative;
   width: auto;

@@ -98,28 +98,30 @@
     min-height: 100px;
     border: double 10px #fff;
     background: #000;
-    &__text {
+    &__inner {
         position: relative;
-        &__name {
+        .name {
             position: relative;
             margin-bottom: 20px;
             color: #fff;
         }
-        &--first {
-            display: none;
-            position: relative;
-            width: auto;
-            height: 16.5px;
-            color: #fff;
-            overflow: hidden;
-        }
-        &--second {
-            display: none;
-            position: relative;
-            width: auto;
-            height: 16.5px;
-            color: #fff;
-            overflow: hidden;
+        .text {
+            &--first {
+                display: none;
+                position: relative;
+                width: auto;
+                height: 16.5px;
+                color: #fff;
+                overflow: hidden;
+            }
+            &--second {
+                display: none;
+                position: relative;
+                width: auto;
+                height: 16.5px;
+                color: #fff;
+                overflow: hidden;
+            }
         }
     }
 }
