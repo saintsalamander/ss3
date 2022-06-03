@@ -119,12 +119,12 @@
 }
 #player {
     &__default {
-        background: url(../../../assets/images/player_default-icon.png) no-repeat;
+        background: url(../../../assets/images/dist/player_default-icon.png) no-repeat;
         background-size: contain;
         background-position: 50% 6px;
     }
     &__benny {
-        background: url(../../../assets/images/benny_small-dot.png) no-repeat center;
+        background: url(../../../assets/images/dist/benny_small-dot.png) no-repeat center;
         background-size: contain;
     }
     &__add {
@@ -138,7 +138,7 @@
         height: 64px;
         border: solid 1px #fff;
         box-sizing: border-box;
-        background: url(../../../assets/images/plus.png) no-repeat center;
+        background: url(../../../assets/images/dist/plus.png) no-repeat center;
         cursor: pointer;
     }
     &__addFile:hover {

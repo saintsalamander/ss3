@@ -79,7 +79,7 @@ html, body {
   bottom: 64px;
   width: 8000px;
   height: 484px;
-  background: url(../../../assets/images/mt-dot.png) repeat-x;
+  background: url(../../../assets/images/dist/mt-dot.png) repeat-x;
 }
 #back--far .king--back {
   display: none;
@@ -91,7 +91,7 @@ html, body {
   bottom: 0;
   width: 12000px;
   height: 576px;
-  background: url(../../../assets/images/cloud.png) repeat-x;
+  background: url(../../../assets/images/dist/cloud.png) repeat-x;
   overflow-y: hidden;
 }
 
@@ -122,7 +122,7 @@ html, body {
   bottom: 48px;
   width: 320px;
   height: 344px;
-  background: url(../../../assets/images/tree-dot.png) repeat-x;
+  background: url(../../../assets/images/dist/tree-dot.png) repeat-x;
 }
 #front .object {
   position: relative;
@@ -138,7 +138,7 @@ html, body {
   position: relative;
   width: 32000px;
   height: 64px;
-  background: url(../../../assets/images/grass.png);
+  background: url(../../../assets/images/dist/grass.png);
 }
 
 #scroll {
@@ -302,12 +302,12 @@ html, body {
 }
 
 #player__default {
-  background: url(../../../assets/images/player_default-icon.png) no-repeat;
+  background: url(../../../assets/images/dist/player_default-icon.png) no-repeat;
   background-size: contain;
   background-position: 50% 6px;
 }
 #player__benny {
-  background: url(../../../assets/images/benny_small-dot.png) no-repeat center;
+  background: url(../../../assets/images/dist/benny_small-dot.png) no-repeat center;
   background-size: contain;
 }
 #player__add {
@@ -321,7 +321,7 @@ html, body {
   height: 64px;
   border: solid 1px #fff;
   box-sizing: border-box;
-  background: url(../../../assets/images/plus.png) no-repeat center;
+  background: url(../../../assets/images/dist/plus.png) no-repeat center;
   cursor: pointer;
 }
 #player__addFile:hover {
@@ -411,7 +411,7 @@ html, body {
   margin: auto;
   width: 400px;
   height: 300px;
-  background: url(../../../assets/images/paper-horizontal-dot.png) no-repeat;
+  background: url(../../../assets/images/dist/paper-horizontal-dot.png) no-repeat;
   background-position: 50%;
   transition: 1s all linear;
   background-size: contain;
@@ -454,15 +454,15 @@ html, body {
   border: double 10px #fff;
   background: #000;
 }
-.dialog__inner {
+.dialog__text {
   position: relative;
 }
-.dialog__inner .name {
+.dialog__text__name {
   position: relative;
   margin-bottom: 20px;
   color: #fff;
 }
-.dialog__inner .text--first {
+.dialog__text--first {
   display: none;
   position: relative;
   width: auto;
@@ -470,7 +470,7 @@ html, body {
   color: #fff;
   overflow: hidden;
 }
-.dialog__inner .text--second {
+.dialog__text--second {
   display: none;
   position: relative;
   width: auto;

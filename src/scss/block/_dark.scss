@@ -57,7 +57,7 @@
     margin: auto;
     width: 400px;
     height: 300px;
-    background: url(../../../assets/images/paper-horizontal-dot.png) no-repeat;
+    background: url(../../../assets/images/dist/paper-horizontal-dot.png) no-repeat;
     background-position: 50%;
     transition: 1s all linear;
     background-size: contain;
@@ -98,30 +98,28 @@
     min-height: 100px;
     border: double 10px #fff;
     background: #000;
-    &__inner {
+    &__text {
         position: relative;
-        .name {
+        &__name {
             position: relative;
             margin-bottom: 20px;
             color: #fff;
         }
-        .text {
-            &--first {
-                display: none;
-                position: relative;
-                width: auto;
-                height: 16.5px;
-                color: #fff;
-                overflow: hidden;
-            }
-            &--second {
-                display: none;
-                position: relative;
-                width: auto;
-                height: 16.5px;
-                color: #fff;
-                overflow: hidden;
-            }
+        &--first {
+            display: none;
+            position: relative;
+            width: auto;
+            height: 16.5px;
+            color: #fff;
+            overflow: hidden;
+        }
+        &--second {
+            display: none;
+            position: relative;
+            width: auto;
+            height: 16.5px;
+            color: #fff;
+            overflow: hidden;
         }
     }
 }

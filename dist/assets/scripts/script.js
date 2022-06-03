@@ -68,7 +68,7 @@ $(function(){
         if($("input[name='playerRadio']:checked").val() != "default"){
             console.log("プレイヤーをデフォルトに設定しました");
         }
-        $("#player__image").attr("src", "../assets/images/player_default-head.png");
+        $("#player__image").attr("src", "../assets/images/dist/player_default-head.png");
     })
     // べにちゃん選択で頭変更
     $("#player__benny").click(function(){
@@ -83,7 +83,7 @@ $(function(){
         if($("input[name='playerRadio']:checked").val() != "benny"){
             console.log("プレイヤーをべにちゃんに設定しました");
         }
-        $("#player__image").attr("src", "../assets/images/benny_small-dot.png");
+        $("#player__image").attr("src", "../assets/images/dist/benny_small-dot.png");
     })
     // プレイヤーを追加
     $("#player__add__file").change(function(){
