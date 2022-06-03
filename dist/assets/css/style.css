@@ -74,16 +74,14 @@ html, body {
   height: 576px;
   overflow-y: hidden;
 }
-
-.mountain {
+#back--far .mountain {
   position: absolute;
   bottom: 64px;
   width: 8000px;
   height: 484px;
   background: url(../../../assets/images/mt-dot.png) repeat-x;
 }
-
-.king--back {
+#back--far .king--back {
   display: none;
   margin-left: -94px;
 }
@@ -104,47 +102,43 @@ html, body {
   height: auto;
   overflow-y: hidden;
 }
-
-.front__object {
-  position: relative;
-  width: auto;
-  height: 64px;
-}
-.front__base--above {
-  position: relative;
-  width: auto;
-  height: 64px;
-}
-.front__base--below {
-  position: relative;
-  width: 32000px;
-  height: 64px;
-  background: url(../../../assets/images/grass.png);
-}
-
-.catsle {
+#front .catsle {
   position: absolute;
   left: -200px;
   width: auto;
   height: 512px;
   overflow-y: hidden;
 }
-
-.house_wooden {
+#front .house_wooden {
   position: absolute;
   left: 1300px;
   bottom: 64px;
   width: 256px;
   height: auto;
 }
-
-.tree {
+#front .tree {
   position: absolute;
   left: 500px;
   bottom: 48px;
   width: 320px;
   height: 344px;
   background: url(../../../assets/images/tree-dot.png) repeat-x;
+}
+#front .object {
+  position: relative;
+  width: auto;
+  height: 64px;
+}
+#front .base--above {
+  position: relative;
+  width: auto;
+  height: 64px;
+}
+#front .base--below {
+  position: relative;
+  width: 32000px;
+  height: 64px;
+  background: url(../../../assets/images/grass.png);
 }
 
 #scroll {

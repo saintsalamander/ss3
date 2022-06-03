@@ -4,15 +4,15 @@
     width: 8000px;
     height: 576px;
     overflow-y: hidden;
-}
-.mountain {
-    position: absolute;
-    bottom: 64px;
-    width: 8000px;
-    height: 484px;
-    background: url(../../../assets/images/mt-dot.png) repeat-x;
-}
-.king--back {
-    display: none;
-    margin-left: -94px;
+    .mountain {
+        position: absolute;
+        bottom: 64px;
+        width: 8000px;
+        height: 484px;
+        background: url(../../../assets/images/mt-dot.png) repeat-x;
+    }
+    .king--back {
+        display: none;
+        margin-left: -94px;
+    }
 }
