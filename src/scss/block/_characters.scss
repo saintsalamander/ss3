@@ -1,0 +1,115 @@
+@use "../config/mixins" as mix;
+
+.characters {
+    .back {
+        min-height: 317px;
+        #searchCharacters {
+            display: block;
+            position: relative;
+            margin: 0 auto 35px;
+            padding: 0 3px;
+            height: 30px;
+            font-family: serif;
+            font-size: 18px;
+            background: url(../images/back-ivory.jpg);
+            box-sizing: border-box;
+        }
+        > ul {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            margin: auto;
+            width: 80%;
+            height: fit-content;
+            list-style-type: none;
+            transition: .3s;
+            li {
+                position: relative;
+                padding: 0 10px;
+                width: 25%;
+                font-size: 18px;
+                line-height: 38px;
+                transition: .1s;
+                box-sizing: border-box;
+                user-select: none;
+                @include mix.mq(md){
+                    width: 50%;
+                }
+                @include mix.mq(sm){
+                    width: 100%;
+                }
+                > a {
+                    display: block;
+                    margin: auto;
+                    width: fit-content;
+                    text-decoration: none;
+                    color: #fff;
+                }
+                > a:hover {
+                    font-weight: bold;
+                    text-shadow: 0 0 5px #dff;
+                }
+                > a:active {
+                    color: #222;
+                }
+            }
+        }
+    }
+    #profileBack {
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 106px auto;
+            padding: 50px;
+            width: 80%;
+            height: auto;
+            color: #000;
+            background: url(../images/back-ivory.jpg);
+            box-sizing: border-box;
+            @include mix.mq(xl){
+                padding: 6.7% 6.7% 5.7%;
+            }
+            > img {
+                display: block;
+                width: 300px;
+                height: auto;
+                @include mix.mq(xl){
+                    margin: 0 auto 20px;
+                }
+                @include mix.mq(md){
+                    width: 58.6%;
+                }
+            }
+            &__text {
+                margin-left: 50px;
+                width: calc(100% - 350px);
+                box-sizing: border-box;
+                @include mix.mq(xl){
+                    margin: auto;
+                    width: auto;
+                }
+                > h2 {
+                    margin: auto;
+                    width: fit-content;
+                    font-size: 30px;
+                    @include mix.mq(sm){
+                        font-size: 25px;
+                    }
+                }
+                > p {
+                    margin: 22px auto 30px;
+                    @include mix.mq(xl){
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            .closeButtonArea {
+                padding-left: 300px;
+                width: 100%;
+                @include mix.mq(xl){
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

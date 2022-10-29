@@ -1,0 +1,32 @@
+@use "../config/mixins" as mix;
+
+.news {
+    background: #222;
+    &__area {
+        position: relative;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        height: 300px;
+        border: solid 3px #eee;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        p {
+            margin-bottom: 20px;
+            border-bottom: solid 2px rgba($color: #000, $alpha: .5);
+            box-sizing: border-box;
+            cursor: pointer;
+            span {
+                margin-right: 20px;
+            }
+        }
+        p:hover {
+            background: #444;
+        }
+        p:active {
+            color: #000;
+            text-shadow: 0 0 5px #fff;
+        }
+    }
+}

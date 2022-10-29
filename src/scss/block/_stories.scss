@@ -1,0 +1,67 @@
+@use "../config/mixins" as mix;
+
+.stories {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: auto;
+        width: 600px;
+        height: 300px;
+        text-align: center;
+        @include mix.mq(md){
+            align-items: unset;
+            width: 100%;
+            height: auto;
+        }
+        .storyChapterList {
+            width: 50%;
+            @include mix.mq(md){
+                width: 100%;
+            }
+        }
+        &__image {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            @include mix.mq(md){
+                display: none;
+            }
+            > img {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+    #storyBack {
+        > audio {
+            display: block;
+            margin: 106px auto 20px;
+            max-width: 500px;
+            width: 90%;
+            user-select: none;
+        }
+        > img {
+            display: block;
+            margin: auto;
+            margin-bottom: 40px;
+            max-width: 500px;
+            width: 90%;
+            height: auto;
+            user-select: none;
+        }
+        .closeButtonArea {
+            display: flex;
+            margin: 0 auto 106px;
+            max-width: 500px;
+            width: fit-content;
+            > button {
+                @include mix.mq(sm){
+                    width: 26.4vw;
+                    min-width: auto;
+                }
+            }
+        }
+    }
+}

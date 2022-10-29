@@ -1,0 +1,103 @@
+@use "../config/mixins" as mix;
+
+.novels {
+    background: #222;
+    &__inner {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: auto;
+        width: auto;
+        height: auto;
+        text-align: center;
+        @include mix.mq(md){
+            align-items: unset;
+            width: 100%;
+            height: auto;
+        }
+        .chapterList {
+            margin-right: 300px;
+            width: 300px;
+            @include mix.mq(md){
+                margin: auto;
+            }
+        }
+        .partList {
+            position: absolute;
+            margin-left: 300px;
+            width: auto;
+            height: fit-content;
+            list-style-type: none;
+            transition: .3s;
+            cursor: pointer;
+            li {
+                position: relative;
+                width: fit-content;
+                font-size: 24px;
+                line-height: 38px;
+                transition: .1s;
+                user-select: none;
+            }
+            li:hover {
+                background: rgba($color: #000, $alpha: .2);
+            }
+            li:active {
+                color: #222;
+            }
+            @include mix.mq(md){
+                margin: auto;
+            }
+        }
+    }
+    #novelBack {
+        overflow-y: hidden;
+        embed {
+            display: block;
+            //margin: 106px auto 40px;
+            margin: auto;
+            padding: 20px 00;
+            width: 80%;
+            height: 90%;
+        }
+        .closeButtonArea {
+            display: none;
+            margin-bottom: 106px;
+        }
+    }
+}
+.part--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.chapter--clicked {
+    border-left: double 4px #fff;
+    border-right: double 4px #fff;
+}
+.chapter--hidden {
+    @include mix.mq(md){
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+#novelPartClose {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%);
+    font-family: serif;
+    font-size: 20px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    @include mix.mq(md){
+        display: block;
+    }
+}
+#novelPartClose:hover {
+    text-shadow: 0 0 5px #dff;
+}
+#novelPartClose:active {
+    color: #222;
+}

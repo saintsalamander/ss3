@@ -1,0 +1,130 @@
+@use "../config/mixins" as mix;
+
+.select__title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto 20px;
+    width: fit-content;
+    font-family: serif;
+    font-size: 27px;
+    @include mix.mq(sm){
+        font-size: 7vw;
+    }
+    > span {
+        user-select: none;
+        cursor: pointer;
+    }
+    &__display {
+        user-select: none;
+        cursor: pointer;
+        > a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    &__open {
+        position: relative;
+        top: 14px;
+        left: -6px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 12px solid #fff;
+        content: "";
+        cursor: pointer;
+        @include mix.mq(sm){
+            border-left: 1.75vw solid transparent;
+            border-right: 1.75vw solid transparent;
+            border-top: 3vw solid #fff;
+        }
+    }
+    &__open:hover {
+        border-top: 12px solid #ccc;
+    }
+    &__open:active {
+        border-top: 12px solid #555;
+    }
+}
+
+.selectModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000, $alpha: .2);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    &__inner {
+        display: block;
+        position: relative;
+        margin: 106px auto 30px;
+        list-style-type: none;
+        user-select: none;
+        li {
+            margin: 20px auto;
+            width: fit-content;
+            font-size: 24px;
+            line-height: 24px;
+            transition: .1s;
+            user-select: none;
+            cursor: pointer;
+            > a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        li:hover {
+            font-size: 25px;
+        }
+        li:active {
+            color: #222;
+        }
+    }
+}
+.selectItem--opened {
+    display: block;
+}
+.back {
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+    background: url(../images/oratorio_back.jpg) no-repeat right;
+    background-size: auto 110%;
+    box-sizing: border-box;
+}
+.back::before {
+    position: absolute;
+    margin-top: -50px;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000, $alpha: .2);
+    backdrop-filter: blur(9px);
+    content: "";
+}
+.chapterList {
+    width: fit-content;
+    height: fit-content;
+    list-style-type: none;
+    transition: .3s;
+    cursor: pointer;
+    @include mix.mq(md){
+        width: 100%;
+    }
+    li {
+        position: relative;
+        margin: 7px auto 14px;
+        width: fit-content;
+        font-size: 24px;
+        line-height: 24px;
+        transition: .1s;
+        user-select: none;
+    }
+    li:hover {
+        font-size: 25px;
+    }
+    li:active {
+        color: #222;
+    }
+}

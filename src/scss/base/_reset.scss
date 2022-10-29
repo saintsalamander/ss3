@@ -1,0 +1,61 @@
+@use "../config/mixins" as mix;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: serif;
+    color: #fff;
+    background: #111;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display:none;
+}
+// body:-webkit-scrollbar-thumb {
+//    background: #000;
+// }
+.banScroll {
+    overflow-y: hidden;
+}
+section {
+    padding: 20px 0 80px;
+}
+.sectionTitle {
+    display: flex;
+    margin: 0 auto 20px;
+    width: fit-content;
+    font-size: 30px;
+    font-weight: bold;
+    > svg {
+        margin: 7px 10px 10px 0;
+        width: 30px;
+        height: 30px;
+        fill: #fff;
+    }
+}
+.modalBack {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000, $alpha: .5);
+    z-index: 1;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.modalBack::-webkit-scrollbar {
+    display: none;
+}
+
+.hidden {
+    opacity: 0;
+}
